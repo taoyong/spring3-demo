@@ -10,19 +10,18 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>bean-learning</module>
-        <module>context-learning</module>
     </modules>
     <properties>
-        <spring.global.version>3.0.5.RELEASE</spring.global.version>
+        <spring.global.version>3.1.1.RELEASE</spring.global.version>
     </properties>
     <dependencyManagement>
         <dependencies>
             <!-- https://mvnrepository.com/artifact/org.springframework/org.springframework.asm -->
-          <!--  <dependency>
+            <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>org.springframework.asm</artifactId>
                 <version>${spring.global.version}</version>
-            </dependency>-->
+            </dependency>
             <!-- https://mvnrepository.com/artifact/org.springframework/org.springframework.core -->
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -51,6 +50,19 @@
                 <version>${spring.global.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>org.springframework.web</artifactId>
+                <version>${spring.global.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>org.springframework.web.servlet</artifactId>
+                <version>${spring.global.version}</version>
+            </dependency>
+
+
             <!-- https://mvnrepository.com/artifact/org.apache.log4j/com.springsource.org.apache.log4j -->
             <dependency>
                 <groupId>org.apache.log4j</groupId>
@@ -71,6 +83,19 @@
                 <artifactId>com.springsource.org.apache.commons.collections</artifactId>
                 <version>3.2.1</version>
             </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>1.2.17</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
+
+
 </project>
